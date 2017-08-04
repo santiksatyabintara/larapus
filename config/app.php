@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Larapus'),
 
     /*
     |--------------------------------------------------------------------------
@@ -176,6 +176,12 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        // Add Plus
+         Collective\Html\HtmlServiceProvider::class,
+         Laratrust\LaratrustServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
+
+        
 
     ],
 
@@ -225,6 +231,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        //Add Plus
+        // 'Form' => Collective\Html\FormFarcade::class,
+        // 'Html'=> Collective\Html\Html\HtmlFarcade::class,
+        // 'Laratrust' => Laratrust\LaratrustFacade::class,
 
     ],
 
